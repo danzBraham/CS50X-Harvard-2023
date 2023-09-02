@@ -1,0 +1,9 @@
+1. To characterize the audio aura of a listener based on their top 100 songs from 2018,
+we would calculate the average energy, valence, and danceability of these songs.
+
+2. To create a more representative audio aura, we can consider the following improvements:
+    - Long-Term Analysis
+    - Incorporate User Input
+    - Use Sentiment Analysis
+    - Contextual Information
+    - Consider Artist Impact

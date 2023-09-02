@@ -1,0 +1,20 @@
+sort1 uses: Bubble Sort
+
+How do you know?:
+Random 9s: Indicates the use of Bubble Sort, which repeatedly compares adjacent elements and swaps them if necessary, gradually "bubbling" larger elements towards the end of the array.
+Reversed 7s: Supports Bubble Sort, as it efficiently handles reversed data by consistently swapping adjacent elements until they are in the correct order.
+Sorted 3s: Reinforces the hypothesis of Bubble Sort, as it performs multiple passes and comparisons, although no swaps occur in this case.
+
+sort2 uses: Merge Sort
+
+How do you know?:
+Random 4s: Suggests the use of Merge Sort, a more efficient algorithm that divides the array into smaller subarrays and recursively merges them.
+Reversed 2s: Supports Merge Sort, as its divide-and-conquer approach efficiently handles reversed data.
+Sorted 3s: Aligns with Merge Sort, which still performs splitting and merging even on sorted data, though the merging step becomes simpler.
+
+sort3 uses: Selection Sort
+
+How do you know?:
+Random 4s: Implies the use of Selection Sort, which repeatedly finds the minimum element and swaps it with the first unsorted element, gradually sorting the array.
+Reversed 5s: Further indicates Selection Sort, as it excels at reversing the order of elements through multiple swaps.
+Sorted 4s: Aligns with Selection Sort, which performs multiple passes and comparisons even on sorted data, though no swaps occur in this case.
