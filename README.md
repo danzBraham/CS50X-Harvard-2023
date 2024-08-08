@@ -6,7 +6,7 @@ Welcome to my repository for the Harvard University CS50X (Introduction to Compu
 
 - **Course Name:** CS50X - Introduction to Computer Science
 - **University:** Harvard University
-- **Year:** 2023
+- **Year:** 2024
 
 ## Weekly Breakdown
 
