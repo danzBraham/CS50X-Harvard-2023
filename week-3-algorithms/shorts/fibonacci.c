@@ -3,13 +3,13 @@
 #include <stdlib.h>
 #include <string.h>
 
-int collatz(int n);
+int fibonacci(int n);
 
 int main(int argc, char *argv[])
 {
   if (argc != 2)
   {
-    fprintf(stderr, "Usage: ./collatz number\n");
+    fprintf(stderr, "Usage: ./fibonacci number\n");
     return 1;
   }
 
@@ -19,33 +19,31 @@ int main(int argc, char *argv[])
   {
     if (!isdigit(arg[i]))
     {
-      fprintf(stderr, "Usage: ./collatz number\n");
+      fprintf(stderr, "Usage: ./fibonacci number\n");
       return 1;
     }
   }
 
   int number = atoi(arg);
-  if (number <= 0)
-  {
-    {
-      fprintf(stderr, "Number must be positive\n");
-      return 1;
-    }
-  }
 
-  printf("%i steps\n", collatz(number));
+  printf("%i\n", fibonacci(number));
 
   return 0;
 }
 
-int collatz(int n)
+int fibonacci(int n)
 {
   // base case
-  if (n == 1)
+  if (n <= 1)
   {
     return 0;
   }
 
+  if (n == 2)
+  {
+    return 1;
+  }
+
   // recursive case
-  return (n % 2 == 0) ? 1 + collatz(n / 2) : 1 + collatz(3 * n + 1);
+  return fibonacci(n - 1) + fibonacci(n - 2);
 }
