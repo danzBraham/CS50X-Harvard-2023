@@ -2,13 +2,13 @@
 
 #include <stdint.h>
 
-// These data types are essentially aliases for C/C++ primitive data types. 
+// These data types are essentially aliases for C/C++ primitive data types.
 // Adapted from http://msdn.microsoft.com/en-us/library/cc230309.aspx.
 // See https://en.wikipedia.org/wiki/C_data_types#stdint.h for more on stdint.h.
 
-typedef uint8_t  BYTE;
+typedef uint8_t BYTE;
 typedef uint32_t DWORD;
-typedef int32_t  LONG;
+typedef int32_t LONG;
 typedef uint16_t WORD;
 
 // The BITMAPFILEHEADER structure contains information about the type, size,
@@ -17,11 +17,11 @@ typedef uint16_t WORD;
 
 typedef struct
 {
-    WORD   bfType;
-    DWORD  bfSize;
-    WORD   bfReserved1;
-    WORD   bfReserved2;
-    DWORD  bfOffBits;
+  WORD bfType;
+  DWORD bfSize;
+  WORD bfReserved1;
+  WORD bfReserved2;
+  DWORD bfOffBits;
 } __attribute__((__packed__))
 BITMAPFILEHEADER;
 
@@ -31,17 +31,17 @@ BITMAPFILEHEADER;
 
 typedef struct
 {
-    DWORD  biSize;
-    LONG   biWidth;
-    LONG   biHeight;
-    WORD   biPlanes;
-    WORD   biBitCount;
-    DWORD  biCompression;
-    DWORD  biSizeImage;
-    LONG   biXPelsPerMeter;
-    LONG   biYPelsPerMeter;
-    DWORD  biClrUsed;
-    DWORD  biClrImportant;
+  DWORD biSize;
+  LONG biWidth;
+  LONG biHeight;
+  WORD biPlanes;
+  WORD biBitCount;
+  DWORD biCompression;
+  DWORD biSizeImage;
+  LONG biXPelsPerMeter;
+  LONG biYPelsPerMeter;
+  DWORD biClrUsed;
+  DWORD biClrImportant;
 } __attribute__((__packed__))
 BITMAPINFOHEADER;
 
@@ -50,8 +50,8 @@ BITMAPINFOHEADER;
 
 typedef struct
 {
-    BYTE  rgbtBlue;
-    BYTE  rgbtGreen;
-    BYTE  rgbtRed;
+  BYTE rgbtBlue;
+  BYTE rgbtGreen;
+  BYTE rgbtRed;
 } __attribute__((__packed__))
 RGBTRIPLE;
